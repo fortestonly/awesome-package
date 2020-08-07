@@ -17,7 +17,7 @@ jobs:
   publish:
     needs: build
     runs-on: ubuntu-latest
-    if: ${{ startsWith(github.ref, 'v') }}
+    if: startsWith(github.ref, 'ref/head/v')
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
