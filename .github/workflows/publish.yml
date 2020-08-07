@@ -2,8 +2,6 @@ name: Publish Package
 
 on:
   push:
-    tags:
-      - v*
 
 jobs:
   build:
@@ -19,6 +17,7 @@ jobs:
   publish:
     needs: build
     runs-on: ubuntu-latest
+    if: ${{ startsWith(github.ref, 'v') }}
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
