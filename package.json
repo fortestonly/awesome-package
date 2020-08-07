@@ -1,6 +1,6 @@
 {
   "name": "@fortestonly/awesome-package",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Awesome package",
   "main": "index.js",
   "scripts": {
@@ -24,6 +24,6 @@
     "mocha": "^8.0.1"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/"
   }
 }
